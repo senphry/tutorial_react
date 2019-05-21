@@ -2,6 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//Importamos nuestro componente
+
+import Hola from './Hola';
+import Contador from './Contador';
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +24,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <div className="App-intro">
+        {/*Incluimos nuestro componente*/}
+        <Hola nombre="Prueba"/>
+        <Contador/>
+      </div>
     </div>
   );
 }
